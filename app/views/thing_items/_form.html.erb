@@ -1,4 +1,7 @@
-<%= form_for(@thing_item) do |f| %>
+<!-- THIS MULTI-PART ALLOWS PIECES TO BE SENT ONE BY ONE AND PUTS IT BACK TOGETHER AS A COMPLETE FILE
+ALSO REMEMBER TO REMOVE THE PARANTHESIS AROUND @THING_ITEM -->
+
+<%= form_for @thing_item, :html => {:multipart => true} do |f| %>
   <% if @thing_item.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@thing_item.errors.count, "error") %> prohibited this thing_item from being saved:</h2>
