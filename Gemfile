@@ -26,6 +26,11 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+# Better Errors replaces the standard Rails error page with a much better and more useful error page.
+#> https://github.com/charliesome/better_errors
+gem 'better_errors'
+gem 'binding_of_caller'  # adding REPL
+
 gem 'carrierwave'
 
 group :development, :test do

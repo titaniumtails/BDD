@@ -13,7 +13,11 @@ feature 'Visit the gitbranch testing & image uploader page' do
     click_button 'Create Thing item'
     expect(page).to have_content 'Thing item was successfully created'
     expect(page).to have_content 'Thing'
+
+    expect(page).to have_content 'Picture'
+
   end
+
 
   scenario 'Show the image'
 
