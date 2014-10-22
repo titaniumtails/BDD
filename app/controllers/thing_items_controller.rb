@@ -69,6 +69,6 @@ class ThingItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def thing_item_params
-      params.require(:thing_item).permit(:name)
+      params.require(:thing_item).permit(:name, :picture)
     end
 end

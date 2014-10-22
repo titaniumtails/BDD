@@ -19,10 +19,12 @@ ALSO REMEMBER TO REMOVE THE PARANTHESIS AROUND @THING_ITEM -->
     <%= f.text_field :name %>
   </div>
   <div class="Picture">
+    <%= image_tag(@thing_item.picture_url) if @thing_item.picture? %>
     <%= f.label :picture %><br>
     <%= f.file_field :picture %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>

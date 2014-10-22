@@ -4,6 +4,8 @@
   <strong>Name:</strong>
   <%= @thing_item.name %>
 </p>
+  <strong>Picture:</strong>
+    <p><%= image_tag @thing_item.picture_url, :width => "300px" %></p
 
 <%= link_to 'Edit', edit_thing_item_path(@thing_item) %> |
 <%= link_to 'Back', thing_items_path %>
